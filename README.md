@@ -4,3 +4,6 @@
 
 
 ![Planning](https://i.imgur.com/KETNK5u.jpg)
+
+![Wire-framing](https://i.imgur.com/VBFJqiW.jpg)
+
