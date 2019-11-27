@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cryptosearch</title>
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cryptosearch</h1>
+        <p>Your friendly cryptocurrency converter</p>
+    </header>
+    <section id="entry">
+        <form action="" id="entry-form">
+            <input id="quantity" placeholder="0" value="" required />
+            <input list="search" id="first-currency" placeholder="Choose a cryptocurrency" value="" required />
+                <datalist id="search">
+                    <option class="currency" value="curr1"></option>
+                    <option class="currency" value="curr2"></option>
+                    <option class="currency" value="curr3"></option>
+                    <option class="currency" value="curr4"></option>
+                    <option class="currency" value="curr5"></option>
+                </datalist>
+            <input list="search" id="second-currency" placeholder="" value="USD" required />
+                <datalist id="search">
+                    <option class="currency" value="USD"></option>
+                </datalist>
+            <button type="submit" id="submit-button" aria-label="Submit button"></button>
+        </form>
+    </section>
+    <section id="result">
+        <!--DOM fills this section-->
+    </section>
+    <footer>
+        <p>Made by FAMK using CoinGecko api</p>
+    </footer>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>
