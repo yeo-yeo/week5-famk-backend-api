@@ -1,50 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Cryptosearch</title>
-    <link rel="shortcut icon" type="image/png" href="public/img/favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="public/styles.css">
-</head>
-<body>
+    <link rel="shortcut icon" type="image/png" href="public/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="public/styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Cryptosearch</h1>
-        <p>Your friendly cryptocurrency converter</p>
+      <h1>Cryptosearch</h1>
+      <p>Your friendly cryptocurrency converter</p>
     </header>
     <section id="entry">
-        <form action="" id="entry-form">
-            <input class="quantity" placeholder="0" value="10" required />
-            <input list="search" id="first-currency" placeholder="Choose a cryptocurrency" value="Bitcoin" required />
-                <datalist id="search">
-                    <option class="currency" value="Bitcoin"></option>
-                    <option class="currency" value="Ethereum"></option>
-                    <option class="currency" value="Ripple"></option>
-                    <option class="currency" value="Bitcoin cash"></option>
-                    <option class="currency" value="EOS"></option>
-                    <option class="currency" value="Cardano"></option>
-                    <option class="currency" value="Litecoin"></option>
-                    <option class="currency" value="Stellar"></option>
-                    <option class="currency" value="IOTA"></option>
-                    <option class="currency" value="NEO"></option>
-                </datalist>
-            <input list="search" id="second-currency" placeholder="" value="USD" required />
-                <datalist id="search">
-                    <option class="currency" value="USD"></option>
-                </datalist>
-            <button type="submit" id="submit-button" aria-label="Submit button"></button>
-        </form>
+      <h2>Currency input form</h2>
+      <form action="" id="entry-form">
+        <input class="quantity" placeholder="0" value="10" required />
+        <input
+          list="search"
+          id="first-currency"
+          placeholder="Choose a cryptocurrency"
+          value="Bitcoin"
+          required
+        />
+        <datalist id="search">
+          <option class="currency" value="Bitcoin"></option>
+          <option class="currency" value="Ethereum"></option>
+          <option class="currency" value="Ripple"></option>
+          <option class="currency" value="Bitcoin cash"></option>
+          <option class="currency" value="EOS"></option>
+          <option class="currency" value="Cardano"></option>
+          <option class="currency" value="Litecoin"></option>
+          <option class="currency" value="Stellar"></option>
+          <option class="currency" value="IOTA"></option>
+          <option class="currency" value="NEO"></option>
+        </datalist>
+        <input
+          list="search"
+          id="second-currency"
+          placeholder=""
+          value="USD"
+          required
+        />
+        <datalist id="search">
+          <option class="currency" value="USD"></option>
+        </datalist>
+        <button
+          type="submit"
+          id="submit-button"
+          aria-label="Submit button"
+        ></button>
+      </form>
     </section>
     <section id="result">
-        <!--DOM fills this section-->
+      <h2>Conversion Output</h2>
+      <!--DOM fills this section-->
     </section>
     <footer>
-        <p>Made by FAMK using CoinGecko api</p>
+      <p>Made by FAMK using CoinGecko api</p>
     </footer>
-    
-
 
     <script src="public/main.js"></script>
-</body>
+  </body>
 </html>
