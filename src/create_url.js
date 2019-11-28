@@ -11,5 +11,5 @@ const createUrl = (firstCurrency, secondCurrency) => {
 
 // createUrl(crypto, usd);
 
-module.exports = {createUrl};
+module.exports = { createUrl };
   
