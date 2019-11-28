@@ -8,6 +8,11 @@ Welcome to CryptWatch™!  Here you can check the current value of the most popu
 
 <img src="https://imgur.com/h3vwxjT.jpg" width="200" height="60">
 
+We are:
+Jamie
+Pat
+Judith
+Gillian
 
 ### Installation Guide
 
@@ -56,3 +61,12 @@ The missing 5% (as of writing) is the lines of code which deal with handling ser
 
 (Add screenshot of accessibility report)
 
+### Problems
+
+* Typos!
+![facepalm](https://gph.is/19lfu4P)
+* Integrating Travis, Codecov, other testing modules.... lots of bits and pieces that were new for us and we didn't find the documentation super helpful for beginners
+
+### Future Improvements
+* Add other 'normal' currencies (e.g. EUR, GBP)
+* Add autocomplete functionality when typing cryptocurrency (similar to last week's project)
