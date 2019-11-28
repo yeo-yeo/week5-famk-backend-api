@@ -1,12 +1,15 @@
 # Week 5 - FAMK - Backend API call page
 
-### Testing
-
 Travis badge:  
 [![Build Status](https://travis-ci.com/fac18/week5-famk-backend-api.svg?branch=master)](https://travis-ci.com/fac18/week5-famk-backend-api)
 
 CodeCov badge:  
 [![codecov](https://codecov.io/gh/fac18/week5-famk-backend-api/branch/master/graph/badge.svg)](https://codecov.io/gh/fac18/week5-famk-backend-api)
+
+
+Welcome to CryptWatch™!  Here you can check the current value of the most popular cryptocurrencies in USD.  CryptWatch™ is powered by:
+<img src="https://imgur.com/h3vwxjT.jpg" width="120" height="40">
+
 
 ### Installation Guide
 
@@ -19,9 +22,18 @@ CodeCov badge:
 4. See site on localhost:3000 in your browser
 
 
-### Planning Process
+### Planning Process and Architecture
 
-![Brainstorming and file architecture](https://i.imgur.com/yARMsii.jpg)
+<img src="https://i.imgur.com/yARMsii.jpg" width="500" height="600">
+<img src="https://i.imgur.com/VBFJqiW.jpg" width="400" height="400">
 
-![Wire-framing](https://i.imgur.com/VBFJqiW.jpg)
+### Tests
+
+(Add screenshot of tests passing)
+
+Our current code coverage status: [![codecov](https://codecov.io/gh/fac18/week5-famk-backend-api/branch/master/graph/badge.svg)](https://codecov.io/gh/fac18/week5-famk-backend-api)
+
+### Accessibility
+
+(Add screenshot of accessibility report)
 
