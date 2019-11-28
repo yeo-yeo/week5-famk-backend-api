@@ -2,9 +2,7 @@ const handlers = require("./handlers");
 
 const router = (request, response) => {
   const endpoint = request.url;
-  console.log("Hey");
   if (endpoint === "/") {
-    console.log("hello");
     handlers.handleHome(request, response);
   } else if (endpoint.indexOf("public") !== -1) {
     handlers.handlePublic(request, response);
