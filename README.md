@@ -51,20 +51,20 @@ We chose a background image of a black and white image shown in binary 0s and 1s
 
 ### Tests
 
-(Add screenshot of tests passing)
+[tests](https://i.imgur.com/qlbqD8o.png)
 
 Our current code coverage status: [![codecov](https://codecov.io/gh/fac18/week5-famk-backend-api/branch/master/graph/badge.svg)](https://codecov.io/gh/fac18/week5-famk-backend-api)
 
-The missing 5% (as of writing) is the lines of code which deal with handling server errors (status 500).  As far as we know, it is not possible to test for these.
+The missing 5% is the lines of code which deal with handling server errors (status 500).  As far as we know, it is not possible to test for these.
 
 ### Accessibility
 
-(Add screenshot of accessibility report)
+[accessibility](https://i.imgur.com/ZlQsk5v.png)
 
 ### Problems
 
 * Typos!
-![facepalm](https://gph.is/19lfu4P)
+![facepalm](https://media.giphy.com/media/14aUO0Mf7dWDXW/giphy.gif)
 * Integrating Travis, Codecov, other testing modules.... lots of bits and pieces that were new for us and we didn't find the documentation super helpful for beginners
 
 ### Future Improvements
