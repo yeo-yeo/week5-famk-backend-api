@@ -5,6 +5,9 @@
 Travis badge:  
 [![Build Status](https://travis-ci.com/fac18/week5-famk-backend-api.svg?branch=master)](https://travis-ci.com/fac18/week5-famk-backend-api)
 
+CodeCov badge:  
+[![codecov](https://codecov.io/gh/fac18/week5-famk-backend-api/branch/master/graph/badge.svg)](https://codecov.io/gh/fac18/week5-famk-backend-api)
+
 ![Brainstorming and file architecture](https://i.imgur.com/yARMsii.jpg)
 
 
