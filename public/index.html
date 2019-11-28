@@ -18,20 +18,20 @@
     <div class="wrapper">
     <section id="entry">
       <h2>Currency input form</h2>
-      
-      <form action="" id="entry-form" class="inputform">
-        <input class="quantity" placeholder="Enter quantity" required />
+      <form action="" id="entry-form">
+        <input class="quantity" placeholder="Enter quantity" aria-label="enter a quantity" required />
         <input
           list="search1"
           id="first-currency"
-          placeholder="Pick cryptocurrency"
+          placeholder="Choose a cryptocurrency"
           required
+          aria-label="Choose a cryptocurrency from the list"
         />
         <datalist id="search1">
           <option class="currency" value="Bitcoin"></option>
           <option class="currency" value="Ethereum"></option>
           <option class="currency" value="Ripple"></option>
-          <option class="currency" value="Bitcoin cash"></option>
+          <!-- <option class="currency" value="Bitcoin cash"></option> -->
           <option class="currency" value="EOS"></option>
           <option class="currency" value="Cardano"></option>
           <option class="currency" value="Litecoin"></option>
@@ -46,6 +46,8 @@
           value="USD"
           required
           disabled
+          aria-label="Choose a currency from the list"
+          aria-label="Choose a currency from the list"
         />
         <datalist id="search2">
           <option class="currency" value="USD"></option>
