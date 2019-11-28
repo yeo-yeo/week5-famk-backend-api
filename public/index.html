@@ -16,15 +16,16 @@
     <section id="entry">
       <h2>Currency input form</h2>
       <form action="" id="entry-form">
-        <input class="quantity" placeholder="0" value="10" required />
+        <input class="quantity" placeholder="0" value="10" aria-label="enter a quantity" required />
         <input
-          list="search"
+          list="search1"
           id="first-currency"
           placeholder="Choose a cryptocurrency"
           value="Bitcoin"
           required
+          aria-label="Choose a cryptocurrency from the list"
         />
-        <datalist id="search">
+        <datalist id="search1">
           <option class="currency" value="Bitcoin"></option>
           <option class="currency" value="Ethereum"></option>
           <option class="currency" value="Ripple"></option>
@@ -37,13 +38,14 @@
           <option class="currency" value="NEO"></option>
         </datalist>
         <input
-          list="search"
+          list="search2"
           id="second-currency"
           placeholder=""
           value="USD"
           required
+          aria-label="Choose a currency from the list"
         />
-        <datalist id="search">
+        <datalist id="search2">
           <option class="currency" value="USD"></option>
         </datalist>
         <button
