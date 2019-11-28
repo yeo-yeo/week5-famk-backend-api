@@ -8,7 +8,8 @@ CodeCov badge:
 
 
 Welcome to CryptWatch™!  Here you can check the current value of the most popular cryptocurrencies in USD.  CryptWatch™ is powered by:
-<img src="https://imgur.com/h3vwxjT.jpg" width="120" height="40">
+
+<img src="https://imgur.com/h3vwxjT.jpg" width="200" height="60">
 
 
 ### Installation Guide
