@@ -1,18 +1,20 @@
 const quantityInput = document.querySelector('.quantity');
-const 
- = document.getElementById('first-currency');
-const submitButton = document.getElementById('submit-button');
-const cashCurrency = document.getElementById('second-currency');
+const currencyInput = document.querySelector('#first-currency');
+const submitButton = document.querySelector('#submit-button');
+const cashCurrency = document.querySelector('#second-currency');
 
-let queryObj = {};
+console.log('submit button ', submitButton);
 
-submitButton.addEventListsener('click', e => {
-    
-    e.preventDefault()
+submitButton.addEventListener("click", event => {
+    let queryObj = {};
+    event.preventDefault();
+    console.log('submit button', submitButton);
     const quantity = quantityInput.value;
+    console.log('quantity ', quantity);
     const cryptoCurrency = currencyInput.value;
+    console.log('cryptocurrency ', cryptoCurrency);
     queryObj.quantity = quantity;
-    queryObj.cryptoCurrency = cryptoCurrency;
-    console.log(queryObj);
-
+    queryObj.currency= cryptoCurrency;
+    console.log('quer object', queryObj);
 })
+
