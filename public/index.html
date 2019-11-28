@@ -4,24 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Cryptosearch</title>
+    <title>Cryptowatch</title>
     <link rel="shortcut icon" type="image/png" href="public/img/favicon.png" />
     <link rel="stylesheet" type="text/css" href="public/styles.css" />
   </head>
   <body>
+    <img class="bg" src="public/img/background.jpg" alt="background image of linked chains made of binary data" />
+    <img class="bg2" src="public/img/plain-white-background.jpg" alt="white background" />
     <header>
-      <h1>Cryptosearch</h1>
+      <h1>cryptowatch</h1>
       <p>Your friendly cryptocurrency converter</p>
     </header>
+    <div class="wrapper">
     <section id="entry">
       <h2>Currency input form</h2>
       <form action="" id="entry-form">
-        <input class="quantity" placeholder="0" value="" aria-label="enter a quantity" required />
+        <input class="quantity" placeholder="Enter quantity" aria-label="enter a quantity" required />
         <input
           list="search1"
           id="first-currency"
           placeholder="Choose a cryptocurrency"
-          value=""
           required
           aria-label="Choose a cryptocurrency from the list"
         />
@@ -43,6 +45,8 @@
           placeholder=""
           value="USD"
           required
+          disabled
+          aria-label="Choose a currency from the list"
           aria-label="Choose a currency from the list"
         />
         <datalist id="search2">
@@ -59,6 +63,7 @@
       <h2>Conversion Output</h2>
       <!--DOM fills this section-->
     </section>
+</div>
     <footer>
       <p>Made by FAMK using CoinGecko api</p>
     </footer>
