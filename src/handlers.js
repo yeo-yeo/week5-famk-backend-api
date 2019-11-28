@@ -10,7 +10,7 @@ const handleHome = (request, response) => {
   fs.readFile(filePath, (error, file) => {
     if (error) {
       response.writeHead(500, { "Content-type": "text/html" });
-      response.end("<h1>Sorry we had a problem our end</h1>");
+      response.end("<h1>Sorry, there is a server error at our end!</h1>");
     } else {
       response.writeHead(200, { "Content-type": "text/html" });
       response.end(file);
@@ -32,7 +32,7 @@ const handlePublic = (request, response) => {
       fs.readFile(filePath, (error, file) => {
           if(error) {
               response.writeHead(500, {'Content-type': 'text/html'});
-              response.end('<h1>Sorry, there is a server error(</h1>');
+              response.end('<h1>Sorry, there is a server error at our end!</h1>');
           } else {
               response.writeHead(200, {'Content-Type': extensionType[extension]});
               response.end(file);
