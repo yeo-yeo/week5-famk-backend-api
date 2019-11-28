@@ -1,5 +1,5 @@
 const test = require('tape');
-const main = require('../public/main');
+const main = require('../src/create_url');
 
 //createUrl output tests:
 
@@ -21,8 +21,9 @@ test("createUrl returns a string that contains second passed currency", t => {
     t.end();
 });
 
-test("createUrl returns a string that contains 'https' substring", t => {
-    const actual =  main.createUrl("bitcoin", "usd").includes("https");
+test("createUrl returns a string that contains 'https' or 'http' substring", t => {
+    const actual =  main.createUrl("bitcoin", "usd").includes("https") ||
+                    main.createUrl("bitcoin", "usd").includes("http") ;
     t.equal(actual, true);
     t.end();
 });
