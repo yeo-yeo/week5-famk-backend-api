@@ -1,3 +1,6 @@
 node_modules
 .DS_Store
 src/currency_list.json
+coverage
+.vscode
+.nyc_output
