@@ -2,6 +2,130 @@
   box-sizing: border-box;
 }
 
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+}
+
+h1 {
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+p {
+    color:white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    margin: 0; 
+}
+
 h2 {
   display: none;
 }
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  min-height: 15vh;  
+  background-color:rgba(0, 0, 0, 1);
+  border-bottom: 2px solid white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: space-around;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    min-height: 15vh;  
+    background-color:rgba(0, 0, 0, 1);
+    border-top: 2px solid white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+form {
+    margin-top:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin: 10px;
+    font-size: 1.2rem;
+    height: 2rem;
+}
+
+button {
+    height: 2rem;
+    width: 2rem;
+
+    background-image: url("./img/search.png");
+    background-size: cover;
+}
+
+.wrapper {
+    width: 70vw;
+    min-height: 60vh;
+    align-self: center;
+    background-color: black;
+    border: 2px solid white;
+}
+
+
+.bg {
+    border:0;
+    position:fixed;
+    top:0;
+    left:0;
+    min-height: 100%;
+    min-width: 900px;
+    width: 100%;
+    height: auto;
+    height:auto;
+    z-index:-20;
+}
+
+.bg2 {
+    border:0;
+    position:fixed;
+    top:0;
+    left:0;
+    min-height: 100%;
+    min-width: 900px;
+    width: 100%;
+    height: auto;
+    height:auto;
+    z-index:-15;
+    opacity:0;
+}
+
+@media screen and (max-width: 900px) {
+    img {
+        left: 50%;
+        /*margin-left: -450px;*/
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
