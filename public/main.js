@@ -3,27 +3,33 @@ const currencyInput = document.querySelector('#first-currency');
 const submitButton = document.querySelector('#submit-button');
 const cashCurrency = document.querySelector('#second-currency');
 const resultContainer = document.querySelector('#result');
+let quantity;
+let cryptoCurrency;
 
-let queryObj = {};
+// let queryObj = {};
 
 submitButton.addEventListener("click", event => {
+    quantity = quantityInput.value;
+    cryptoCurrency = currencyInput.value;
     event.preventDefault();
-    const quantity = quantityInput.value;
-    const cryptoCurrency = currencyInput.value;
-    queryObj.quantity = quantity;
-    queryObj.currency= cryptoCurrency;
+    console.log("button event list")
+    // queryObj.quantity = quantity;
+    // queryObj.currency= cryptoCurrency;
     backEndCall(cryptoCurrency);
     
 })
+
+let APIResponse;
 
 const backEndCall = cryptoCurrency => {
     const xml = new XMLHttpRequest();
     const url = `/search?ids=${cryptoCurrency}&vs_currencies=usd`;
 
     xml.onreadystatechange = () => {
-        if (xml.readystate === 4 && xml.status === 200) {
-            const APIResponse = JSON.parse(xml.responseText);
-            renderCurrencies(APIResponse);
+        if (xml.readyState === 4 && xml.status === 200) {
+            APIResponse = JSON.parse(xml.responseText);
+            console.log('this is api response', APIResponse)
+            renderCurrencies();
         }
         
     }
@@ -38,12 +44,14 @@ const backEndCall = cryptoCurrency => {
     }
   };*/
 
-const renderCurrencies = APIResponse => {
+const renderCurrencies = () => {
     let displayValue = document.createElement('p');
-    displayValue.textContent = APIResponse.cryptoCurrency;
+    displayValue.textContent = `$ ${APIResponse[cryptoCurrency.toLowerCase()].usd}`;
     resultContainer.appendChild(displayValue);
-    renderTimeStamp(APIResponse);
-    console.log('APIResponse.cryptoCurrency ', APIResponse.cryptoCurrency.usd);
+    // renderTimeStamp(APIResponse);
+    console.log('cryptocurrency ', cryptoCurrency);
+    console.log('apiresponse ', APIResponse);
+    console.log('APIResponse.cryptoCurrency ', APIResponse[cryptoCurrency.toLowerCase()].usd);
     console.log('displayValue ', displayValue);
 } 
 
