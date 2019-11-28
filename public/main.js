@@ -37,31 +37,43 @@ const backEndCall = cryptoCurrency => {
     xml.send();
 }
 
-/*let APIResponse = {
-    "bitcoin": {
-      "usd": 7469.8,
-      "last_updated_at": 1574940331
-    }
-  };*/
+  const clearElement = el => {
+      while (el.firstChild) {
+          el.removeChild(el.firstChild);
+      }
+  }
 
+
+  
 const renderCurrencies = () => {
+
+clearElement(resultContainer);
     let displayValue = document.createElement('p');
-    displayValue.textContent = `$ ${APIResponse[cryptoCurrency.toLowerCase()].usd}`;
+    let totalValue = APIResponse[cryptoCurrency.toLowerCase()].usd * quantity; 
+    displayValue.textContent = `$ ${totalValue}`;
     resultContainer.appendChild(displayValue);
-    // renderTimeStamp(APIResponse);
-    console.log('cryptocurrency ', cryptoCurrency);
-    console.log('apiresponse ', APIResponse);
-    console.log('APIResponse.cryptoCurrency ', APIResponse[cryptoCurrency.toLowerCase()].usd);
-    console.log('displayValue ', displayValue);
+    //timeStamp = createTimeStamp(APIResponse[cryptoCurrency.toLowerCase()].last_updated_at);
+    //console.log('This is timestamp ', timeStamp)
+    //console.log('cryptocurrency ', cryptoCurrency);
+    //console.log('apiresponse ', APIResponse);
+    //console.log('APIResponse.cryptoCurrency ', APIResponse[cryptoCurrency.toLowerCase()].usd);
+    //console.log('displayValue ', displayValue);
 } 
 
-const renderTimeStamp = APIResponse => {
+const createTimeStamp = (secs) => {
+var t = new Date(1970, 0, 1);
+t.setSeconds(secs);
+return t;
+}
+
+
+/*const renderTimeStamp = APIResponse => {
     let timeStamp = document.createElement('p');
-    let timeStampValue = APIResponse.cryptoCurrency.last_updated_at;
+    let timeStampValue = APIResponse.[cryptoCurrency.last_updated_at;
     //let time = new Date(timeStampValue);
     timeStamp.textContent = timeStampValue;
     resultContainer.appendChild(timeStamp);
-}
+}*/
 
 
 
