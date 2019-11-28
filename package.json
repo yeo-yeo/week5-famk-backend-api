@@ -4,15 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tape tests/test.js | tap-spec",
+    "test": "nyc --reporter=lcov tape tests/*.js | tap-spec",
     "lint": "eslint .",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "coverage": "codecov"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "codecov": "^3.6.1",
     "eslint": "^6.7.1",
+    "nyc": "^14.1.1",
     "supertest": "^4.0.2",
     "tap-spec": "^5.0.0",
     "tape": "^4.11.0"
