@@ -83,6 +83,7 @@ The missing 5% is the lines of code which deal with handling server errors (stat
 * Typos! <br>
 ![facepalm](https://media.giphy.com/media/14aUO0Mf7dWDXW/giphy.gif)
 * Integrating Travis, Codecov, other testing modules.... lots of bits and pieces that were new for us and we didn't find the documentation super helpful for beginners
+* Some very strange JavaScript behaviour when handling the API request in the front end....
 
 ### :arrow_right: Future Improvements
 * Add autocomplete functionality when typing cryptocurrency (similar to last week's project)
