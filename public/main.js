@@ -39,7 +39,7 @@ const clearElement = el => {
 const renderCurrencies = () => {
     clearElement(resultContainer);
     let displayValue = document.createElement('p');
-    let totalValue = (APIResponse[cryptoCurrency.toLowerCase()].usd * quantity).toFixed(4); 
+    let totalValue = (APIResponse[cryptoCurrency.toLowerCase()].usd * quantity).toFixed(5).replace(/\d(?=(\d{3})+\.)/g, '$&,');; 
     displayValue.textContent = `$ ${totalValue}`;
     displayValue.classList.add("display_value");
     resultContainer.appendChild(displayValue);
