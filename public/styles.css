@@ -87,10 +87,6 @@ button {
   transition: all 0.2s ease-in-out;
 }
 
-/* .wrapper:hover, .wrapper:active {
-    opacity: 1;
-} */
-
 .bg {
   border: 0;
   position: fixed;
@@ -133,8 +129,7 @@ button {
 @media screen and (max-width: 900px) {
   img {
     left: 50%;
-    /*margin-left: -450px;*/
-  }
+     }
 
   input {
     font-size: 1rem;

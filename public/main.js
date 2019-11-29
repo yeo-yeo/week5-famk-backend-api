@@ -44,13 +44,7 @@ const renderCurrencies = () => {
     displayValue.classList.add("display_value");
     resultContainer.appendChild(displayValue);
     let ccTimeStamp = createTimeStamp(APIResponse[cryptoCurrency.toLowerCase()].last_updated_at);
-    // console.log('ccTimeStamp ', ccTimeStamp);
-    // console.log('ccTimestamp typeof', typeof ccTimeStamp );
     let stringDate = ccTimeStamp.toString();
-    // console.log('stringDate typeof', typeof stringDate );
-    // const index = stringDate.indexOf('+');
-    // console.log('+ index', index); 
-    // console.log('stringdate', stringDate);
     let uiTimeStamp = document.createElement('p');
     uiTimeStamp.textContent = `Last updated: ${stringDate.slice(0, 34)}`;
     uiTimeStamp.classList.add('time_stamp');
