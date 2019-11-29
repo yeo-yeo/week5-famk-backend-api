@@ -4,7 +4,7 @@
 
 
 
-👋 Welcome to CryptWatch™!  Here you can check the current value of the most popular cryptocurrencies in major world currencies.  CryptWatch™ is powered by:
+👋 Welcome to CryptoWatch™!  Here you can check the current value of the most popular cryptocurrencies in major world currencies.  CryptoWatch™ is powered by:
 
 <img src="https://imgur.com/pi13DmO.jpg" width="200" height="60">
 
