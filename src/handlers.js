@@ -67,7 +67,7 @@ const handle404 = (request, response) => {
       response.writeHead(500, { "Content-type": "text/html" });
       response.end("<h1>Sorry, there is a server error at our end!</h1>");
     } else {
-      response.writeHead(200, { "Content-type": "text/html" });
+      response.writeHead(404, { "Content-type": "text/html" });
       response.end(file);
     }
   });
