@@ -1,8 +1,6 @@
 const fs = require("fs");
 const path = require("path");
 const https = require("https");
-// const url = require("url");
-// const queryString = require("querystring");
 
 const handleHome = (request, response) => {
   const filePath = path.join(__dirname, "..", "public", "index.html");
@@ -52,7 +50,6 @@ const handleSearch = (request, frontResponse) => {
     });
 
     response.on("end", () => {
-      console.log(data);
       frontResponse.end(data);
     })
 
