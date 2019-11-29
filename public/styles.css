@@ -3,6 +3,7 @@
 }
 
 body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +13,6 @@ body {
 
 h1 {
   color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   text-transform: uppercase;
   font-weight: 100;
   margin-bottom: 0;
@@ -20,7 +20,6 @@ h1 {
 
 p {
   color: white;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   margin: 0;
 }
 
