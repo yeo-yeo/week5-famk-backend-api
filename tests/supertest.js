@@ -71,8 +71,6 @@ test("404 works", t => {
 
 // Front end testing
 
-
-//const test = require('tape');
 const main = require('../src/create_url');
 
 //createUrl output tests:
