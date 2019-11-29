@@ -1,14 +1,41 @@
 //UI Variables
+<<<<<<< HEAD
+const quantityInput = document.querySelector('.quantity');
+const currencyInput = document.querySelector('#first-currency');
+const submitButton = document.querySelector('#submit-button');
+const resultContainer = document.querySelector('#result');
+const dataList = document.querySelector('#search1');
+||||||| merged common ancestors
+const quantityInput = document.querySelector('.quantity');
+const currencyInput = document.querySelector('#first-currency');
+const submitButton = document.querySelector('#submit-button');
+const resultContainer = document.querySelector('#result');
+=======
 const quantityInput = document.querySelector(".quantity");
 const currencyInput = document.querySelector("#first-currency");
 const normalCurrencyInput = document.querySelector("#second-currency");
 const submitButton = document.querySelector("#submit-button");
 const resultContainer = document.querySelector("#result");
+>>>>>>> master
 let quantity;
 let cryptoCurrency;
 let normalCurrency;
 
 submitButton.addEventListener("click", event => {
+<<<<<<< HEAD
+    quantity = quantityInput.value;
+    cryptoCurrency = currencyInput.value;
+    event.preventDefault();
+    backEndCall(cryptoCurrency);
+})
+||||||| merged common ancestors
+    quantity = quantityInput.value;
+    cryptoCurrency = currencyInput.value;
+    event.preventDefault();
+    console.log("button event list")
+    backEndCall(cryptoCurrency);
+})
+=======
   quantity = quantityInput.value;
   cryptoCurrency = currencyInput.value;
   normalCurrency = normalCurrencyInput.value;
@@ -16,9 +43,30 @@ submitButton.addEventListener("click", event => {
   console.log("button event list");
   backEndCall(cryptoCurrency, normalCurrency);
 });
+>>>>>>> master
 
 // let APIResponse;
 
+<<<<<<< HEAD
+const backEndCall = cryptoC => {
+    const xml = new XMLHttpRequest();
+    const url = `/search?ids=${cryptoC}&vs_currencies=usd`;
+    xml.onreadystatechange = () => {
+        if (xml.readyState === 4 && xml.status === 200) {
+            APIResponse = JSON.parse(xml.responseText);
+            renderCurrencies();
+        }
+||||||| merged common ancestors
+const backEndCall = cryptoC => {
+    const xml = new XMLHttpRequest();
+    const url = `/search?ids=${cryptoC}&vs_currencies=usd`;
+    xml.onreadystatechange = () => {
+        if (xml.readyState === 4 && xml.status === 200) {
+            APIResponse = JSON.parse(xml.responseText);
+            console.log('this is api response', APIResponse)
+            renderCurrencies();
+        }
+=======
 const backEndCall = (cryptoC, normalC) => {
   const xml = new XMLHttpRequest();
   const url = `/search?ids=${cryptoC}&vs_currencies=${normalC}`;
@@ -27,6 +75,7 @@ const backEndCall = (cryptoC, normalC) => {
       apiResponse = JSON.parse(xml.responseText);
       console.log("this is api response", apiResponse);
       renderCurrencies();
+>>>>>>> master
     }
   };
   xml.open("GET", url, true);

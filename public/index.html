@@ -26,6 +26,52 @@
       <p>Your friendly cryptocurrency converter</p>
     </header>
     <div class="wrapper">
+    <section id="entry">
+      <h2>Currency input form</h2>
+      <form action="" id="entry-form">
+        <input class="quantity" placeholder="Enter quantity" aria-label="enter a quantity" required />
+        <input
+          list="search1"
+          id="first-currency"
+          placeholder="Choose a cryptocurrency"
+          aria-label="Choose a cryptocurrency from the list"
+        />
+        <datalist id="search1">
+          <option class="currency" value="Bitcoin">
+          <option class="currency" value="Ethereum">
+          <option class="currency" value="Ripple">
+          <option class="currency" value="EOS">
+          <option class="currency" value="Cardano">
+          <option class="currency" value="Litecoin">
+          <option class="currency" value="Stellar">
+          <option class="currency" value="IOTA">
+          <option class="currency" value="NEO">
+        </datalist>
+        <input
+          list="search2"
+          id="second-currency"
+          placeholder=""
+          value="USD"
+          required
+          disabled
+          aria-label="Choose a currency from the list"
+          aria-label="Choose a currency from the list"
+        />
+        <datalist id="search2">
+          <option class="currency" value="USD"></option>
+        </datalist>
+        <button
+          type="submit"
+          id="submit-button"
+          aria-label="Submit button"
+        ></button>
+      </form>
+    </section>
+    <section id="result">
+      <h2>Conversion Output</h2>
+      <!--DOM fills this section-->
+    </section>
+</div>
       <section id="entry">
         <h2>Currency input form</h2>
         <form action="" id="entry-form">
