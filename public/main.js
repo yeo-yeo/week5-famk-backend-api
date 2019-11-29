@@ -3,6 +3,7 @@ const quantityInput = document.querySelector('.quantity');
 const currencyInput = document.querySelector('#first-currency');
 const submitButton = document.querySelector('#submit-button');
 const resultContainer = document.querySelector('#result');
+const dataList = document.querySelector('#search1');
 let quantity;
 let cryptoCurrency;
 
@@ -10,7 +11,6 @@ submitButton.addEventListener("click", event => {
     quantity = quantityInput.value;
     cryptoCurrency = currencyInput.value;
     event.preventDefault();
-    console.log("button event list")
     backEndCall(cryptoCurrency);
 })
 
@@ -22,7 +22,6 @@ const backEndCall = cryptoC => {
     xml.onreadystatechange = () => {
         if (xml.readyState === 4 && xml.status === 200) {
             APIResponse = JSON.parse(xml.responseText);
-            console.log('this is api response', APIResponse)
             renderCurrencies();
         }
     }
