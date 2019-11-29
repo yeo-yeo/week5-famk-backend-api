@@ -59,8 +59,23 @@ const handleSearch = (request, frontResponse) => {
   }).on("error", err => console.log(err, "error!"))
 };
 
+const handle404 = (request, response) => {
+  const filePath = path.join(__dirname, "..", "public", "404.html");
+
+  fs.readFile(filePath, (error, file) => {
+    if (error) {
+      response.writeHead(500, { "Content-type": "text/html" });
+      response.end("<h1>Sorry, there is a server error at our end!</h1>");
+    } else {
+      response.writeHead(200, { "Content-type": "text/html" });
+      response.end(file);
+    }
+  });
+};
+
 module.exports = {
   handleHome,
   handlePublic,
-  handleSearch
+  handleSearch,
+  handle404
 };
