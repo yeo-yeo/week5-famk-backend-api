@@ -4,15 +4,15 @@
 
 
 
-👋 Welcome to CryptWatch™!  Here you can check the current value of the most popular cryptocurrencies in USD.  CryptWatch™ is powered by:
+👋 Welcome to CryptWatch™!  Here you can check the current value of the most popular cryptocurrencies in major world currencies.  CryptWatch™ is powered by:
 
-<img src="https://imgur.com/h3vwxjT.jpg" width="200" height="60">
+<img src="https://imgur.com/pi13DmO.jpg" width="200" height="60">
 
 We are:
-* Jamie
-* Pat
-* Judith
-* Gillian
+* Jamie :last_quarter_moon_with_face:
+* Pat :cat2:
+* Judith :water_buffalo:
+* Gillian :penguin:
 
 ### 💾 Installation Guide
 
@@ -43,6 +43,23 @@ We also sketched a quick mockup of the page layout
 
 <img src="https://i.imgur.com/VBFJqiW.jpg" width="400" height="400">
 
+### :checkered_flag: On your marks, get set, go!
+On Day 1:
+* We mobbed the initial set up of the project, including the HTML
+* Judith and Gillian started writing the server/router/handlers side of things...
+* ...while Jamie and Pat set out on the beginnings of the front end scripting including TESTS!
+
+
+<img src="https://imgur.com/inAunBp.jpg" width="533" height="300">
+
+On Day 2:
+* Judith and Pat got stuck into the front-end scripts, in particular the API call to the back end
+* Jamie and Gillian finished the back end parts and wrote some very super super tests
+* Judith and Pat ran into some weird problems with handling the API response and managing the formatting of the timestamp, which caused them some headaches
+* But they managed to get it all up and working, and added some stratospheric DOM manipulation
+* Jamie was the CSS master, with Pat later adding some expert upgrades
+* Jamie and Gillian worked on the bits and pieces to get the project deployed (Travis, Codecov, Heroku)... and got the all important *badges*!
+
 ### :zap:Visual Design
 
 We decided that our design should be 'modern' to reflect the nature of cryptocurrencies, with a simple colour scheme
@@ -68,5 +85,5 @@ The missing 5% is the lines of code which deal with handling server errors (stat
 * Integrating Travis, Codecov, other testing modules.... lots of bits and pieces that were new for us and we didn't find the documentation super helpful for beginners
 
 ### :arrow_right: Future Improvements
-* Add other 'normal' currencies (e.g. EUR, GBP)
 * Add autocomplete functionality when typing cryptocurrency (similar to last week's project)
+* Add ability to reverse conversion: e.g. from USD to Bitcoin

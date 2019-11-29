@@ -1,7 +1,6 @@
 const test = require("tape");
 const supertest = require("supertest");
-const router = require("../src/router")
-
+const router = require("../src/router");
 
 // Back end testing
 

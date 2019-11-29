@@ -2,13 +2,19 @@
   box-sizing: border-box;
 }
 
+html {
+    background-color: black;
+}
+
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 100vmin;
+    padding: 20vh;
 }
 
 h1 {
@@ -21,6 +27,11 @@ h1 {
 p {
   color: white;
   margin: 0;
+}
+
+.arrow {
+    color: white;
+    margin: 0;
 }
 
 h2 {
@@ -38,7 +49,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: space-around;
+  z-index: 10;
 }
 
 footer {
@@ -71,19 +82,18 @@ input {
 button {
   height: 2rem;
   width: 2rem;
-
   background-image: url("./img/search.png");
   background-size: cover;
 }
 
 .wrapper {
-  width: 70vw;
-  min-height: 60vh;
-  align-self: center;
-  background-color: black;
-  border: 2px solid white;
-  opacity: 0.95;
-  transition: all 0.2s ease-in-out;
+    width: 70vw;
+    min-height: 60vh;
+    align-self: center;
+    background-color: black;
+    border: 2px solid white;
+    opacity: 0.95;
+    transition: all 0.2s ease-in-out;
 }
 
 .bg {
@@ -147,5 +157,11 @@ button {
   .display_value {
     font-size: 2rem;
     margin-top: 1em;
+  }
+
+  .arrow {
+    color: white;
+    margin: 0;
+    display: none;
   }
 }

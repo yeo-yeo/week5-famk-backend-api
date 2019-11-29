@@ -9,8 +9,7 @@ const router = (request, response) => {
   } else if (endpoint.indexOf("search") !== -1) {
     handlers.handleSearch(request, response);
   } else {
-    response.writeHead(404, { "Content-type": "text/html" });
-    response.end("<h1>404 not found</h1>");
+    handlers.handle404(request, response);
   }
 };
 
