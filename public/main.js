@@ -24,8 +24,8 @@ const backEndCall = (cryptoC, normalC) => {
   const url = `/search?ids=${cryptoC}&vs_currencies=${normalC}`;
   xml.onreadystatechange = () => {
     if (xml.readyState === 4 && xml.status === 200) {
-      APIResponse = JSON.parse(xml.responseText);
-      console.log("this is api response", APIResponse);
+      apiResponse = JSON.parse(xml.responseText);
+      console.log("this is api response", apiResponse);
       renderCurrencies();
     }
   };
@@ -43,7 +43,7 @@ const renderCurrencies = () => {
   clearElement(resultContainer);
   let displayValue = document.createElement("p");
   let totalValue = (
-    APIResponse[cryptoCurrency.toLowerCase()][normalCurrency.toLowerCase()] *
+    apiResponse[cryptoCurrency.toLowerCase()][normalCurrency.toLowerCase()] *
     quantity
   )
     .toFixed(2)
@@ -53,7 +53,7 @@ const renderCurrencies = () => {
   displayValue.classList.add("display_value");
   resultContainer.appendChild(displayValue);
   let ccTimeStamp = createTimeStamp(
-    APIResponse[cryptoCurrency.toLowerCase()].last_updated_at
+    apiResponse[cryptoCurrency.toLowerCase()].last_updated_at
   );
   let stringDate = ccTimeStamp.toString();
   let uiTimeStamp = document.createElement("p");
