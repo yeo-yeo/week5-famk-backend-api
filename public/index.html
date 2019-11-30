@@ -30,40 +30,37 @@
             aria-label="enter a quantity"
             required
           />
-          <input
-            list="search1"
+          <select
             id="first-currency"
-            placeholder="Pick cryptocurrency"
             required
             aria-label="Choose a cryptocurrency from the list"
-          />
-          <datalist id="search1">
-            <option class="currency" value="Bitcoin"></option>
-            <option class="currency" value="Ethereum"></option>
-            <option class="currency" value="Ripple"></option>
-            <!-- <option class="currency" value="Bitcoin cash"></option> -->
-            <option class="currency" value="EOS"></option>
-            <option class="currency" value="Cardano"></option>
-            <option class="currency" value="Litecoin"></option>
-            <option class="currency" value="Stellar"></option>
-            <option class="currency" value="IOTA"></option>
-            <option class="currency" value="NEO"></option>
-          </datalist>
+          >
+            <option value="" disabled selected hidden
+              >Pick cryptocurrency</option
+            >
+            <option class="currency" value="Bitcoin">Bitcoin</option>
+            <option class="currency" value="Ethereum">Ethereum</option>
+            <option class="currency" value="Ripple">Ripple</option>
+            <option class="currency" value="EOS">EOS</option>
+            <option class="currency" value="Cardano">Cardano</option>
+            <option class="currency" value="Litecoin">Litecoin</option>
+            <option class="currency" value="Stellar">Stellar</option>
+            <option class="currency" value="IOTA">IOTA</option>
+            <option class="currency" value="NEO">NEO</option>
+          </select>
           <p class="arrow">&#8680;</p>
-          <input
-            list="search2"
+          <select
             id="second-currency"
-            placeholder="Pick currency"
             required
             aria-label="Choose a currency from the list"
-          />
-          <datalist id="search2">
-            <option class="currency" value="USD"></option>
-            <option class="currency" value="GBP"></option>
-            <option class="currency" value="EUR"></option>
-            <option class="currency" value="JPY"></option>
-            <option class="currency" value="CNY"></option>
-          </datalist>
+          >
+            <option value="" disabled selected hidden>Pick currency</option>
+            <option class="currency" value="USD">USD</option>
+            <option class="currency" value="GBP">GBP</option>
+            <option class="currency" value="EUR">EUR</option>
+            <option class="currency" value="JPY">JPY</option>
+            <option class="currency" value="CNY">CNY</option>
+          </select>
           <button
             type="submit"
             id="submit-button"

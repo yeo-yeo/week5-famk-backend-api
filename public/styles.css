@@ -3,18 +3,18 @@
 }
 
 html {
-    background-color: black;
+  background-color: black;
 }
 
 body {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    min-height: 100vmin;
-    padding: 20vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 100vmin;
+  padding: 20vh;
 }
 
 h1 {
@@ -30,8 +30,8 @@ p {
 }
 
 .arrow {
-    color: white;
-    margin: 0;
+  color: white;
+  margin: 0;
 }
 
 h2 {
@@ -74,7 +74,8 @@ form {
   align-items: center;
 }
 
-input {
+input,
+select {
   margin: 10px;
   font-size: 1.2rem;
   height: 2rem;
@@ -88,13 +89,13 @@ button {
 }
 
 .wrapper {
-    width: 70vw;
-    min-height: 60vh;
-    align-self: center;
-    background-color: black;
-    border: 2px solid white;
-    opacity: 0.95;
-    transition: all 0.2s ease-in-out;
+  width: 70vw;
+  min-height: 60vh;
+  align-self: center;
+  background-color: black;
+  border: 2px solid white;
+  opacity: 0.95;
+  transition: all 0.2s ease-in-out;
 }
 
 .bg {
@@ -125,7 +126,7 @@ button {
 @media screen and (max-width: 900px) {
   img {
     left: 50%;
-     }
+  }
 
   input {
     font-size: 1rem;
@@ -145,5 +146,4 @@ button {
     font-size: 2rem;
     margin-top: 1em;
   }
-
 }
